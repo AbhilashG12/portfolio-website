@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhilash-Portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #1b1b32;
+            color: white;
+            font-family: cursive;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 10vh;
+            background-color: #0a0a23;
+
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px
+            ;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+        nav ul li a:hover{
+        color: #a846d6;
+       
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .frst{
+            display: flex;
+            justify-content: space-around;
+            margin: 25px 0;
+        }
+        .frst >div{
+            width: 30%;
+        }
+        #stack{
+            padding: 35px 42px;
+            border: 2px solid #1b1b32;
+            margin: 60px 0;
+            border-radius: 20px;
+            background-color: #0a0a23;
+        }
+        .lftsec{
+            margin: 30px 0;
+            font-size: 2rem;
+        }
+        
+        .pix{
+            height: 400px;
+            width: 400px;
+        }
+        .pur{
+           color: #a846d6;
+        }
+        @keyframes rotate-progress {
+            0% {
+                background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(#4faa41 0%, #977c60 0%);
+            }
+            100% {
+                background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(#4faa41 80%, #977c60 0);
+            }
+        }
+        
+        .progress-bar {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(#4faa41 80%, #977c60 0);
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.5s, color 0.5s;
+        }
+        
+        .progress-bar:hover {
+            animation: rotate-progress 2s forwards; /* Adjust the duration as needed */
+        }
+        
+            #express{
+              width: 150px;
+              height: 150px;
+              border-radius: 50%;
+              margin: -147px 288px;
+              background: 
+                radial-gradient(closest-side, white 79%, transparent 80% 100%),
+               conic-gradient(#e0e00c 75%, #977c60 0);    
+                }
+                #react{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    margin: -147px 504px;
+                    background: 
+                    radial-gradient(closest-side, white 79%, transparent 80% 100%),
+                    conic-gradient(#00d8ff 75%, #977c60 0); 
+
+          }
+          #node{
+            width: 150px;
+              height: 150px;
+              border-radius: 50%;
+              margin: -147px 714px;
+              background: 
+                radial-gradient(closest-side, white 79%, transparent 80% 100%),
+                conic-gradient(#4f9943 75%, #977c60 0);  
+          }
+          .personal-info {
+            width: 400px;
+            height: 425px;
+          }
+          .personal-info .subtitle {
+            font-family: "Roboto", verdana;
+            font-size: 14px;
+            padding: 0px 30px;
+            margin-bottom: -5px;
+          }
+          .personal-info .subtitle:nth-of-type(4) {
+            margin-bottom: -20px;
+          }
+          .info-icons {
+            padding-right: 8px;
+            font-size: 16px;
+          }
+          .personal-text {
+            padding: 0px 25px;
+            font-family: "Roboto";
+            font-size: 14px;
+            line-height: 1.5;
+            color: rgb(40, 40, 40);
+          }
+          #regular-link {
+            color: rgb(37, 92, 221);
+          }
+
+          .mongo{
+            height: 100px;
+            width: 100px;
+            margin: 18px 27px;
+          }
+          .exp{
+            border-radius: 50px;
+            height: 100px;
+            width: 100px;
+            margin: 18px 27px;
+          }
+          .rct{
+            border-radius: 50px;
+            height: 100px;
+            width: 100px;
+            margin: 23px 27px;
+          }
+          .nd{
+            border-radius: 50px;
+            height: 100px;
+            width: 100px;
+            margin: 23px 27px;
+          }
+          .conta {
+            max-width: 600px;
+            margin: 148px 62px;
+        }
+        
+        h2 {
+            margin-bottom: 10px;
+        }
+        
+        .progressbar {
+            background-color: #ddd;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        
+        .progress {
+            background-color: #4caf50;
+            height: 30px;
+            line-height: 30px;
+            color: white;
+            text-align: center;
+            border-radius: 25px 0 0 25px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Abhilash's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Contact me</a></li>
+                    <li><a href="/">Services</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="div-title">
+            <h2>Personal Info</h2>
+          </div>
+            <div class="subtitle">
+              <i class="fi fi-rs-user info-icons"></i>
+              <p>Abhilash Gandhamalla , 20 years</p>
+            </div>
+            <div class="subtitle"><i class="fi fi-rs-marker info-icons"></i>
+            <a id="regular-link" href="https://www.google.com/maps/place/Alair,+Telangana/@17.6384585,79.0179384,14z/data=!3m1!4b1!4m6!3m5!1s0x3bcb5de4240b39a5:0x7070f3ed42c89af3!8m2!3d17.6437392!4d79.0430485!16s%2Fm%2F0gg77d_?entry=ttu" target="_blank">Aler,Telangana</a>
+            </div>
+            <div class="subtitle">
+              <i class="fi fi-rr-graduation-cap info-icons"></i>
+              <p>Currently studying Computer Engineering at <a id="regular-link" href="https://mrce.in/" target="_blank">Malla Reddy College of Engineering</a></p> 
+            </div>
+            <div class="subtitle">
+              <i class="fi fi-rr-comment-alt info-icons"></i>
+              <p>Fluent in Telugu , Hindi , English</p>
+            </div>
+            <p class="personal-text">I'm a new developer who wants to specialize on Full Stack Web development or Back-End Development at the very least, as I have always been interested in programming since I was younger. I like to read, listen to music and play videogames, also enjoy thinking about posible projects with my actual skills on coding, and things I want to do in the future. </p>
+          </div>
+        <section class="frst">
+            <div class="lftsec">Hey..I'm <span class="pur">Abhilash</span>
+                <div>and i am a passionate </div>
+                    <span id="element"></span>
+                    <h3 id="stack">STACK I USE</h3>
+                    
+            </div>
+            
+            <div class="rytsec"><img src="develp.png" alt="" class="pix"></div>
+        </section>
+    
+        
+
+        <section class="second">
+            
+            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <img src="mongodb (1).png" alt="" class="mongo">
+            </div>
+            <div id="express" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <img src="express.png" alt="" class="exp">
+            </div>
+            <div id="react" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <img src="react.png" alt="" class="rct">
+            </div>
+            
+            <div id="node" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <img src="node.png" alt="" class="nd">
+            </div>
+            
+        </section>
+
+        <section class="third">
+            <div class="conta">
+                <h2>Java</h2>
+                <div class="progressbar">
+                    <div class="progress" style="width: 70%;">70%</div>
+                </div>
+        
+                <h2>CSS</h2>
+                <div class="progressbar">
+                    <div class="progress" style="width: 70%;">70%</div>
+                </div>
+        
+                <h2>HTML</h2>
+                <div class="progressbar">
+                    <div class="progress" style="width: 80%;">80%</div>
+                </div>
+        
+                <h2>JavaScript</h2>
+                <div class="progressbar">
+                    <div class="progress" style="width: 65%;">65%</div>
+                </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer..!'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
